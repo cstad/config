@@ -71,6 +71,7 @@ call plug#begin('~/.vim/plugged')
     let g:syntastic_javascript_checkers = [ 'eslint_d', 'eslint' ]
     let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
+" TypeScript
   Plug 'https://github.com/leafgarland/typescript-vim.git'
 call plug#end()
 
