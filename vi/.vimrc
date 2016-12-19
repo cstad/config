@@ -73,5 +73,7 @@ call plug#begin('~/.vim/plugged')
 
 " TypeScript
   Plug 'https://github.com/leafgarland/typescript-vim.git'
+
+  Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 call plug#end()
 
