@@ -21,6 +21,9 @@ set foldlevel=1
 " map esc key to ii
 imap ii <Esc>
 
+" buffer to clipboard
+set clipboard=unnamed
+
 " ======== start: SPLIT CONFIG ========
 " split window heights
 set winheight=30
