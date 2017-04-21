@@ -6,9 +6,10 @@ export ZSH=/Users/z0022g1/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
+plugins=(git zsh-syntax-highlighting nvm vi-mode)
+
 source $ZSH/oh-my-zsh.sh
 
-plugins=(git, zsh-syntax-highlighting, nvm, vi-mode)
 
 export GRADLE_HOME=~/Development/tools/gradle-2.13
 
