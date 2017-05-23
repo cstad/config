@@ -48,6 +48,11 @@ export NVM_DIR="/Users/z0022g1/.nvm"
 source <(kubectl completion zsh)
 alias kk=kubectl
 
+#=========================================================================
+# REFRESH SECRETS
+#=========================================================================
+alias fresh=/Users/z0022g1/Development/repos/kubernetes/secrets/ima/local/env.sh
+
 #==========================================================================
 # DRONE ENVIRONMENT VARS
 #==========================================================================
