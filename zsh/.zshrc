@@ -51,7 +51,7 @@ alias kk=kubectl
 #=========================================================================
 # REFRESH SECRETS
 #=========================================================================
-alias fresh=/Users/z0022g1/Development/repos/kubernetes/secrets/ima/local/env.sh
+alias fresh="source $HOME/.zshrc"
 
 #==========================================================================
 # DRONE ENVIRONMENT VARS
@@ -63,6 +63,10 @@ export DRONE_SERVER=https://drone5.target.com
 # LOCAL DEV ENVIRONMENT VARS
 #==========================================================================
 source /Users/z0022g1/Development/repos/kubernetes/secrets/ima/local/env.sh
+
+export IMA_LOCAL_DB_CONFIG_USERNAME=z0022g1
+export IMA_LOCAL_DB_CONFIG_PASSWORD=!Willmanage20172
+
 
 #==========================================================================
 # K8S DEPLOYMENT SECRETS
