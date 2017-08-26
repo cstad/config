@@ -56,16 +56,16 @@ alias fresh="source $HOME/.zshrc"
 #==========================================================================
 # DRONE ENVIRONMENT VARS
 #==========================================================================
-export DRONE_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0IjoiQ2hyaXNTdGFkbGVyIiwidHlwZSI6InVzZXIifQ.zkBGkqDMbGssUn4yW48loeO86PzgJGcQF5xpzfP--_s
-export DRONE_SERVER=https://drone5.target.com
+export DRONE_TOKEN=
+export DRONE_SERVER=
 
 #==========================================================================
 # LOCAL DEV ENVIRONMENT VARS
 #==========================================================================
 source /Users/z0022g1/Development/repos/kubernetes/secrets/ima/local/env.sh
 
-export IMA_LOCAL_DB_CONFIG_USERNAME=z0022g1
-export IMA_LOCAL_DB_CONFIG_PASSWORD=!Willmanage20172
+export IMA_LOCAL_DB_CONFIG_USERNAME=
+export IMA_LOCAL_DB_CONFIG_PASSWORD=
 
 
 #==========================================================================
