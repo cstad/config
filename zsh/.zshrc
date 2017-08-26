@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/z0022g1/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -12,9 +12,10 @@ plugins=(git zsh-syntax-highlighting nvm vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 
-export GRADLE_HOME=~/Development/tools/gradle-2.13
-
-export PATH=$PATH:$GRADLE_HOME/bin:$HOME/bin
+#==========================================================================
+# ENVIRONMENT VARS
+#==========================================================================
+source $HOME/config/env.sh
 
 
 # crtl-r history
@@ -40,36 +41,17 @@ if type lesspipe.sh >/dev/null 2>&1; then
 fi
 
 
-#NVM
-export NVM_DIR="/Users/z0022g1/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # K8s
 source <(kubectl completion zsh)
 alias kk=kubectl
 
-#=========================================================================
-# REFRESH SECRETS
-#=========================================================================
-alias fresh="source $HOME/.zshrc"
-
-#==========================================================================
-# DRONE ENVIRONMENT VARS
-#==========================================================================
-export DRONE_TOKEN=
-export DRONE_SERVER=
 
 #==========================================================================
 # LOCAL DEV ENVIRONMENT VARS
 #==========================================================================
-source /Users/z0022g1/Development/repos/kubernetes/secrets/ima/local/env.sh
+source $HOME/Development/repos/kubernetes/secrets/ima/local/env.sh
 
-export IMA_LOCAL_DB_CONFIG_USERNAME=
-export IMA_LOCAL_DB_CONFIG_PASSWORD=
-
-
-#==========================================================================
-# K8S DEPLOYMENT SECRETS
-#==========================================================================
-export CONFIG_SECRETS=/Users/z0022g1/Development/repos/kubernetes/secrets
+source $HOME/config/overrides.sh
 
