@@ -71,12 +71,12 @@ let g:netrw_liststyle=3
 let mapleader=','
 
 call plug#begin('~/.vim/plugged')
-"NERDTree plugin
+" NERDTree plugin
   Plug 'https://github.com/scrooloose/nerdtree.git'
     map <silent> <C-e> :NERDTreeToggle <CR>
     let NERDTreeQuitOnOpen=1
 
-"git integration
+" git integration
   Plug 'https://github.com/tpope/vim-fugitive.git'
     nnoremap <silent> <leader>gs :Gstatus<CR>
     nnoremap <silent> <leader>gd :Gdiff<CR>
@@ -95,6 +95,9 @@ call plug#begin('~/.vim/plugged')
   " Eslint autodetection on OSX is muddy.. Try eslint_d.
     let g:syntastic_javascript_checkers = [ 'eslint_d', 'eslint' ]
     let g:syntastic_javascript_eslint_exec = 'eslint_d'
+
+" CSS color
+  Plug 'https://github.com/ap/vim-css-color'
 
 " TypeScript
   Plug 'https://github.com/leafgarland/typescript-vim.git'
