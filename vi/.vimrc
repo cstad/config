@@ -92,9 +92,11 @@ call plug#begin('~/.vim/plugged')
 
 " ESLint
   Plug 'https://github.com/scrooloose/syntastic'
+  Plug 'mtscout6/syntastic-local-eslint.vim'
   " Eslint autodetection on OSX is muddy.. Try eslint_d.
     let g:syntastic_javascript_checkers = [ 'eslint_d', 'eslint' ]
     let g:syntastic_javascript_eslint_exec = 'eslint_d'
+    let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
 
 " CSS color
   Plug 'https://github.com/ap/vim-css-color'
@@ -105,3 +107,22 @@ call plug#begin('~/.vim/plugged')
   Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 call plug#end()
 
+" syntactic
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_loc_list_height = 5
+"let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_check_on_w = 1
+"let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_error_symbol = '❌'
+"let g:syntastic_style_error_symbol = '⁉️'
+"let g:syntastic_warning_symbol = '⚠️'
+"let g:syntastic_style_warning_symbol = '💩'
+"highlight link SyntasticErrorSign SignColumn
+"highlight link SyntasticWarningSign SignColumn
+"highlight link SyntasticStyleErrorSign SignColumn
+"highlight link SyntasticStyleWarningSign SignColumn
