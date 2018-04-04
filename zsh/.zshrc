@@ -49,9 +49,6 @@ alias kk=kubectl
 
 
 #==========================================================================
-# LOCAL DEV ENVIRONMENT VARS
+# DEV ENVIRONMENTS
 #==========================================================================
-source $HOME/Development/repos/kubernetes/secrets/ima/local/env.sh
-
-source $HOME/config/overrides.sh
-
+source $HOME/config/dev/all.sh
