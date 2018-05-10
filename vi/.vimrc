@@ -101,6 +101,9 @@ call plug#begin('~/.vim/plugged')
 " CSS color
   Plug 'https://github.com/ap/vim-css-color'
 
+" vi http
+  Plug 'https://github.com/aquach/vim-http-client'
+
 " TypeScript
   Plug 'https://github.com/leafgarland/typescript-vim.git'
 
