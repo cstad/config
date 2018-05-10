@@ -11,6 +11,7 @@ plugins=(git zsh-syntax-highlighting nvm vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_91`
 
 #==========================================================================
 # ENVIRONMENT VARS
